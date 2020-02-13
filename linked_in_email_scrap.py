@@ -32,6 +32,8 @@ for req in range(frnd_size):
     time.sleep(5)
     driver.find_element_by_xpath('/html/body/div[6]/div[4]/div[3]/div/div/div/div/div[2]/main/div[1]/section/div[2]/div[2]/div[1]/ul[2]/li[3]/a').click()
     time.sleep(5)
+    
+    # Parsing using the BeautifulSoup.... to find all details,,,
     page_soup = soup(driver.page_source, 'lxml')
     time.sleep(10)
     container = page_soup.find('div', attrs={'class': 'pv-profile-section__section-info section-info'})
