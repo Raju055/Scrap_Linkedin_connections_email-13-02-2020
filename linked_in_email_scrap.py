@@ -44,5 +44,6 @@ for req in range(frnd_size):
     print(Name + ' : ' + email, + " : " + url)
     driver.back()
     driver.back()
+    time.sleep(5)
 driver.close()
 
